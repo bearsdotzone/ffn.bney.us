@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      jQuery-menu-aim: this example uses Twitter's Bootstrap
+      (http://twitter.github.com/bootstrap) to setup a clean example page.
+
+      Search for "jQuery-menu-aim" in this page to find the jQuery-menu-aim
+      integration examples.
+    -->
+
+    <meta charset="utf-8">
+    <title>The Meat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- 
+      jQuery-menu-aim: the following styles are used to customize bootstrap's
+      dropdowns and popover to play a little nicer w/ this example. They are
+      personal choices and not necessary for your use of jQuery-menu-aim.
+      jQuery-menu-aim is HTML/style-agnostic, it simply fires events when menu
+      items should be activated.
+      You can choose to do whatever you want w/ those events.
+    -->
+    <style>
+        .navbar .popover {
+            width: 400px;
+            -webkit-border-top-left-radius: 0px;
+            -webkit-border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            overflow: hidden;
+        }
+
+        .navbar .popover-content {
+            text-align: center;
+        }
+
+        .navbar .popover-content img {
+            height: 212px;
+            max-width: 250px;
+        }
+
+        .navbar .dropdown-menu {
+            -webkit-border-top-right-radius: 0px;
+            -webkit-border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .dropdown-menu > li > a:hover {
+            background-image: none;
+            color: white;
+            background-color: rgb(0, 129, 194);
+            background-color: rgba(0, 129, 194, 0.5);
+        }
+
+        .navbar .dropdown-menu > li > a.maintainHover {
+            color: white;
+            background-color: #0081C2;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-left">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Fast Food Nation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <!-- <li class="active"> -->
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nutrition Facts</a>
+                <!--
+                  jQuery-menu-aim: this <ul> defines the dropdown main menu and its contents.
+                  This is just one of many possible examples for defining the menu's HTML.
+                  jQuery-menu-aim is agnostic to your HTML structure, it only fires events to
+                  be used as you please.
+                -->
+                <ul class="dropdown-menu" role="menu">
+                    <li data-submenu-id="submenu-patas">
+                        <a href="meat.html">The Meat</a>
+                        <!--
+                          jQuery-menu-aim: each class="popover" div defines submenu content. There are a million
+                          and one ways to do this, places to structure the HTML, etc. This is just one example.
+                          jQuery-menu-aim is agnostic to your HTML structure, it only fires events to be used
+                          as you please.
+                        -->
+                        <div id="submenu-patas" class="popover">
+                            <h3 class="popover-title">The Meat</h3>
+                            <div class="popover-content"><img src="img/patas.png"></div>
+                        </div>
+                    </li>
+                    <li data-submenu-id="submenu-snub-nosed">
+                        <a href="potatoes.html">The Potatoes</a>
+                        <div id="submenu-snub-nosed" class="popover">
+                          <h3 class="popover-title">The Potatoes</h3>
+                            <div class="popover-content"><img src="img/snub-nosed.png"></div>
+                        </div>
+                    </li>
+                    <li data-submenu-id="submenu-duoc-langur">
+                        <a href="advertising.html">The Advertising</a>
+                        <div id="submenu-duoc-langur" class="popover">
+                            <h3 class="popover-title">The Advertising</h3>
+                            <div class="popover-content"><img src="img/duoc-langur.png"></div>
+                        </div>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mc">
+      <p><center><h1>The Meat</h1><br /></center>Fast food nation shines a decidedly poor light on the fast food industry. Whether it be because of the industry's poor labor practices or hyper-competitive economics, the intended reaction is disgust.</p><p>The primary way Schlosser conveys his message of disgust about the fast food industry is through anecdote. The book starts by discussing Carl N. Karcher, founder of Carl's Jr and his role as a "founding father" of the fast food industry. By detailing the birth of the industry, Schlosser informs the reader of its innocent roots while simultaneously contrasting it to the "nation" it would become. Another anecdote Schlosser uses is the story of Elisa Zamot, a purported average Jane, who, with her teenage peers, "run the fast food restaurants." (Schlosser 68) Schlosser includes Zamot's background to introduce the fast food industry's labor practices, knowing the reader will relate to Zamot. When given this personal connection, the ideals of the fast food industry seem darker, more disgusting by comparison. When the industry prioritizes "throughput" as opposed to the workers, like Zamot, it demonizes the industry by affecting Zamot, and therefore the reader. The reader is pushed towards disgust with the industry.</p><p>In addition to anecdote, Schlosser uses imagery to convey disgust. When Schlosser describes the smell of Greeley, Colorado as, "a combination of live animals, manure, and dead animals" (Schlosser 149) he intends for the reader to be disgusted. With this description Schlosser is turning the reader against the fast food industry using the logic of, whatever entity is purposefully making this awful smell must also be bad. Especially when compared to the stunning vistas described by Schlosser in the start of the book, "appears beautiful and serene, dotted with rocky outcroppings, scrub oak..." (Schlosser 1)</p><p>Throughout Fast Food Nation, metaphor and simile are evident. In the introduction, Schlosser describes Cheyenne Mountain as "hardly pristine." (Schlosser 1) This is a metaphor for the fast food industry, the glitz and glamour of the advertising masks the cruel realities of a multibillion dollar, competitive industry. By pointing out the gilded nature of the fast food industry, Schlosser attempts to have the reader think less of industry as a whole. Seeing it as hiding behind a wall of lies. Lies marketed towards children, bringing back the disgust due to the exploitative nature of advertising towards youngs minds, knowing that a child will bring its parents, meaning more customers than marketing to strictly adults.</p><p>Schlosser uses juxtaposition throughout the novel, especially that of "good" and "bad." Idealic vistas of the Rocky Mountains and then the horrendous nature of the cattle farms and assembly-line butchers. Humble beginnings, a mom and pop hot dog stand on the boardwalk, and the tens of thousands of restaurants in a chain, uniformity spread throughout. This good to bad mentality leads the reader to percieve the disgusting, new, fast food industry, as bad compared to the clean, old, world without it.</p>
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.menu-aim.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+
+        var $menu = $(".dropdown-menu");
+
+        // jQuery-menu-aim: <meaningful part of the example>
+        // Hook up events to be fired on menu row activation.
+        $menu.menuAim({
+            activate: activateSubmenu,
+            deactivate: deactivateSubmenu,
+			submenuDirection: "right"
+        });
+        // jQuery-menu-aim: </meaningful part of the example>
+
+        // jQuery-menu-aim: the following JS is used to show and hide the submenu
+        // contents. Again, this can be done in any number of ways. jQuery-menu-aim
+        // doesn't care how you do this, it just fires the activate and deactivate
+        // events at the right times so you know when to show and hide your submenus.
+        function activateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId),
+                height = $menu.outerHeight(),
+                width = $menu.outerWidth();
+
+            // Show the submenu
+            $submenu.css({
+                display: "block",
+                top: -1,
+                left: width - 3,  // main should overlay submenu
+                height: height - 4  // padding for main dropdown's arrow
+            });
+
+            // Keep the currently activated row's highlighted look
+            $row.find("a").addClass("maintainHover");
+        }
+
+        function deactivateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId);
+
+            // Hide the submenu and remove the row's highlighted look
+            $submenu.css("display", "none");
+            $row.find("a").removeClass("maintainHover");
+        }
+
+        // Bootstrap's dropdown menus immediately close on document click.
+        // Don't let this event close the menu if a submenu is being clicked.
+        // This event propagation control doesn't belong in the menu-aim plugin
+        // itself because the plugin is agnostic to bootstrap.
+        $(".dropdown-menu li").click(function(e) {
+            e.stopPropagation();
+        });
+
+        $(document).click(function() {
+            // Simply hide the submenu on any click. Again, this is just a hacked
+            // together menu/submenu structure to show the use of jQuery-menu-aim.
+            $(".popover").css("display", "none");
+            $("a.maintainHover").removeClass("maintainHover");
+        });
+
+    </script>
+
+  </body>
+</html>
+
